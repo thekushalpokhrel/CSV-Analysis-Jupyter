@@ -1,110 +1,100 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[4]:
-
-
-import pandas as pd
-import numpy as np
-import matploitlib.pyplot as plt
-
-
-# In[5]:
-
-
-import pandas as pd
-import numpy as np
-import matploitlib.pyplot as plt
-
-
-# In[11]:
-
-
-df = pd.read_csv('C:/Users/user/Downloads/Effects-of-COVID-19-on-trade-1-February-25-November-2020-provisional.csv')
-
-
-# In[12]:
-
-
-df
-
-
-# In[14]:
-
-
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-
-# In[15]:
-
-
 df = pd.read_csv('C:/Users/user/Downloads/Effects-of-COVID-19-on-trade-1-February-25-November-2020-provisional.csv')
-
-
-# In[16]:
-
 
 df
 
+print (country_df.head())
 
-# In[17]:
+country_df = df['country']
 
-
-print (df.head())
-
-
-# In[19]:
-
+df
 
 print (df.head())
-
-
-# In[20]:
-
-
-print (df.shape)
-
-
-# In[21]:
-
-
-print (df.columns)
-
-
-# In[23]:
-
-
-print (df.dtypes)
-
-
-# In[24]:
-
-
-print (df.info)
 
 print (df.info())
-# In[28]:
 
+print (country_df.head())
 
-country_df = df.['country']
+print (df.info())
 
+df_country = df ['Country']
 
-# In[31]:
+print (df_country.head())
 
+print (df_country.tail())
 
-print country_df = df.['country']
+print(subset.tail)
 
+df_subset = df[['Country', 'Measure','Value']]
 
-# In[30]:
+print(subset.head())
 
+print(subset.head)
 
-print (country_df = df.head())
+df_subset = df[['Country', 'Measure','Value']]
 
+print(subset.head)
 
-# In[ ]:
+subset = df[['Country', 'Measure','Value']]
 
+print(subset.head())
 
+print(subset.tail())
 
+print(df.loc[0])
+
+print(df.loc[30])
+
+print(df.loc[12])
+
+print(df.tail(n=1))
+
+print(df.tail(n=2))
+
+print(df.tail(n=3))
+
+print(df.loc[[0, 99, 999]])
+
+print(df.iloc[1])
+
+print(df.iloc[33])
+
+print(df.iloc[-1])
+
+print(df.iloc[[0, 99, 999]])
+
+subset = df.loc[:, ['year', 'date']]
+
+subset = df.loc[:, ['Year', 'Date']]
+
+print(subset.head())
+
+print(subset.tail())
+
+subset = df.loc[:, ['Year']]
+
+print(subset.head())
+
+print(subset.tail[0, 99, 999])
+
+print(subset(0, 99, 999))
+
+print(subset.head())
+
+print(subset.tail())
+
+subset = df.loc[:, ['Year' , 'Date']]
+
+subset.head()
+
+subset.tail()
+
+subset = df.iloc[:, [2, 4, -1]]
+
+subset.head()
+
+subset.tail()
 
