@@ -1,0 +1,88 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[2]:
+
+
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+
+
+# In[3]:
+
+
+df = pd.read_csv('C:/Users/user/Downloads/Effects-of-COVID-19-on-trade-1-February-25-November-2020-provisional.csv')
+
+
+# In[4]:
+
+
+df
+
+
+# In[5]:
+
+
+print (country_df.head())
+
+
+# In[6]:
+
+
+country_df = df['country']
+
+
+# In[7]:
+
+
+df
+
+
+# In[8]:
+
+
+print (df.head())
+
+
+# In[9]:
+
+
+print (df.info())
+
+
+# In[10]:
+
+
+print (country_df.head())
+
+
+# In[11]:
+
+
+print (df.info())
+
+
+# In[12]:
+
+
+df_country = df ['Country']
+
+
+# In[13]:
+
+
+print (df_country.head())
+
+
+# In[14]:
+
+
+print (df_country.tail())
+
+
+# In[ ]:
+
+
+
+
